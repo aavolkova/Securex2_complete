@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org "
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<!--<head>-->
+    <!--<meta charset="utf-8" />-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <!--&lt;!&ndash; The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags &ndash;&gt;-->
+    <!--<title>Bootstrap 101 Template</title>-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />-->
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <!--<link rel="stylesheet" href="../css/indexCSS.css">-->
+
+<!--</head>-->
+
+<!-- Head -->
+<head th:replace="base :: head"></head>
+<!--<th:block th:replace="base :: head"></th:block>-->
+
+<body style="padding-top: 15%">
+<th:block th:replace="base :: nav"></th:block>
+
+<div class="container">
+
+    <div class="starter-template" style="padding-bottom: 5%">
+        <h1><strong>Securex</strong></h1>
+        <h2>Book Database</h2>
+    </div>
+
+    <div class="starter-template">
+        <p class="lead">Welcome to our book database.<br>You can find here a lot of books in programming, computers, and technology.</p>
+    </div>
+
+    <div class="starter-template">
+        <a href="/login" class="btn btn-lg btn-default" >Log In</a>
+
+        <a href="/logout" class="btn btn-lg btn-default" >Logout</a>
+    </div>
+
+
+
+    <div style="padding-top: 10%"> Logged user: <span sec:authentication="name">The user is not logged in yet</span><div>
+
+</div><!-- /.container -->
+
+    <th:block th:replace="base :: footlinks"></th:block>
+
+</body>
+</html>

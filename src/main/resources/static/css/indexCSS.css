@@ -1,0 +1,20 @@
+.navbar navbar-inverse navbar-fixed-top{
+    padding-bottom: 30%;
+}
+
+body {
+    padding-top: 70px;
+    /*padding-top: 20%;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    /*background-image: url("../img/pexels-photo-326055.jpg");*/
+    background-image: url("../img/blue.jpg");
+}
+
+
+.image{
+    max-width: 100px;
+    height:auto;
+}
